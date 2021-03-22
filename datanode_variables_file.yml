@@ -1,0 +1,21 @@
+hadoop_src_path: "/home/ec2-user/hadoop-1.2.1-1.x86_64.rpm"
+
+jdk_src_path: "/home/ec2-user/jdk-8u171-linux-x64.rpm"
+
+jdk_rpm: "/root/jdk-8u171-linux-x64.rpm"
+
+hadoop_rpm: "/root/hadoop-1.2.1-1.x86_64.rpm"
+
+hdfs_conf_dn: "/root/datanode/hdfs-site.xml"
+
+core_conf_dn: "/root/datanode/core-site.xml"
+
+dn_dir: "/dn"
+
+delete_dir: "rm -rf {{ dn_dir }}"
+
+dn_start: "hadoop-daemon.sh start datanode"
+
+dn_stop: "hadoop-daemon.sh stop datanode"
+
+namenode_ip: 13.233.199.231
